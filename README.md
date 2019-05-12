@@ -1,4 +1,4 @@
-# Α Pos Tagger trained on UD treebank
+# Αn MLP Pos Tagger trained on UD treebank
 The task of this work is to develop a part-of-speech (POS) tagger for the English language of the <a href="http://universaldependencies.org/">Universal Dependencies</a> treebanks, using an MLP operating on windows of words (<a href="https://eclass.aueb.gr/modules/document/file.php/INF210/slides_2018_19/nlp_slides_part03_text_classification_with_mlps.pdf">slides 38–39</a>). We consider only the words, sentences, and POS tags of the treebank (not the dependencies or
 other
 annotations). Because our manually annotated with POS tags corpus is
