@@ -26,7 +26,7 @@ So in this work we make 14 experiments in total (7 methods x 2 classifiers). A s
 <img src="figure1.png" width="70%" height="70%">
 
 ## Experimental Results - Conclusions
-We were very impressed reaching **96,42%** accuracy, while the state-of-the-art <a href="https://arxiv.org/pdf/1711.04903.pdf">Adversarial Bi-LSTM</a> model reaches **95.82%** trained on the UD English EWT Treebank. Even with the single window embeddings method with concatenation and window size=2, we reached 96.10% with our simple MLP implementation (not using an embedding and LSTM layer).
+We were very impressed reaching **96.42%** accuracy, while the state-of-the-art <a href="https://arxiv.org/pdf/1711.04903.pdf">Adversarial Bi-LSTM</a> model reaches **95.82%** trained on the UD English EWT Treebank. Even with the single window embeddings method with concatenation and window size=2, we reached 96.10% with our simple MLP implementation (not using an embedding and LSTM layer).
 
 <img src="table3.png" width="80%" height="80%">
 
