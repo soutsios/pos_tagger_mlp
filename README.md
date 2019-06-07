@@ -28,10 +28,15 @@ So in this work we make 14 experiments in total (7 methods x 2 classifiers). A s
 ## Experimental Results - Conclusions
 We were very impressed reaching **96,42%** accuracy, while the state-of-the-art <a href="https://arxiv.org/pdf/1711.04903.pdf">Adversarial Bi-LSTM</a> model reaches **95.82%** trained on the UD English EWT Treebank. Even with the single window embeddings method with concatenation and window size=2, we reached 96.10% with our simple MLP implementation (not using an embedding and LSTM layer).
 
-<img src="table3.png" width="50%" height="50%"><img src="table4.png" width="49%" height="49%">
+<img src="table3.png" width="80%" height="80%">
+
+<img src="table4.png" width="80%" height="80%">
 
 ## Some final points:
 - Window embeddings method is very fast due its reduced dimension shape (900 compared to 28727 of classical method) and has very good performance (in accuracy and f1-macro metrics). This is indicative of the very rich and strong information the word vectors carry.
 - Increasing the window size, at least in LR model, gives a significant improvement to f1-macro score – a major factor for unbalanced sets.
 - Summing of vectors in window embeddings method is a very bad option. Every learned morpho-syntactic feature seems to disappear!
 - It is interesting that the same pre-trained word embeddings model trained with subword information gives worse results in our task.
+
+## Acknowledgement
+<a href="https://eclass.aueb.gr/courses/INF210/">Natural Language Processing</a> course is part of the MSc in Computer Science of the Department of Informatics, <a href="https://aueb.gr/en">Athens University of Economics and Business</a>. The course covers algorithms, models and systems that allow computers to process natural language texts and/or speech.
